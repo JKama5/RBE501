@@ -69,7 +69,7 @@ Slist = [[-1;0;0;0;-10;-25],[0;-1;0;-20;0;0],[1;0;0;0;-45;42.32]];
 
 T2 = [[0.7071 , -0.5000, -0.5000 , 27.6777];
      [0.7071 , 0.5000 , 0.5000 ,-82.6777];
-     [0.25 , 0.5335 , 0.8080 , 27.3200];
+     [0.25 , -0.7071 , 0.7071 , 27.3200];
      [0 , 0 , 0 , 1.000]];
 
 T3 = [[0.8660 , 0.2500 , -0.4330 , -10.6699];
@@ -85,6 +85,6 @@ thetalistT2 = [1.5708; 0.7854; -0.7854]; % the solved values
 thetalistT3 = [2.0948; 5.7596; 1.0473]; % the solved values
 
  % Replace T3 with T2 and thetalistT3 with thetalistT2 to converge for T2
-[thetalist, success] = IKinSpace(Slist,M,T3,thetalistT3,eomg,ev);
+[thetalist, success] = IKinSpace(Slist,M,T2,thetalistT2,eomg,ev);
 
 
